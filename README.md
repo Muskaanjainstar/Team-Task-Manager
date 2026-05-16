@@ -52,5 +52,5 @@ A Full-Stack Team Task Manager application built with Python (FastAPI) and Vanil
 5. Railway will automatically use the `requirements.txt` and `Procfile` to deploy!
 
 ## Submission Links
-- **Live URL**: [Replace with Railway URL]
-- **GitHub Repo**: [Replace with your Repo URL]
+- **Live URL**: https://web-production-7a332.up.railway.app/
+- **GitHub Repo**: https://github.com/Muskaanjainstar/team-task-manager
