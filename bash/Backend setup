@@ -1,0 +1,5 @@
+cd backend
+npm install
+cp .env.example .env
+# Edit .env with your database credentials
+npm run dev

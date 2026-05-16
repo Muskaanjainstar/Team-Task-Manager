@@ -1,0 +1,12 @@
+# railway.json (Backend)
+{
+  "build": {
+    "builder": "NIXPACKS",
+    "buildCommand": "npm install"
+  },
+  "deploy": {
+    "startCommand": "npm start",
+    "healthcheckPath": "/api/auth/login",
+    "restartPolicyType": "ON_FAILURE"
+  }
+}

@@ -1,0 +1,20 @@
+-- Seed data for testing
+INSERT INTO users (name, email, password, role) VALUES 
+('Admin User', 'admin@example.com', '$2a$10$YourHashedPasswordHere', 'admin'),
+('Member User', 'member@example.com', '$2a$10$YourHashedPasswordHere', 'member');
+
+-- Create sample project
+INSERT INTO projects (name, description, owner_id) VALUES 
+('Sample Project', 'This is a sample project to demonstrate functionality', 1);
+
+-- Add members to project
+INSERT INTO project_members (project_id, user_id, role) VALUES 
+(1, 1, 'admin'),
+(1, 2, 'member');
+
+-- Create sample tasks
+INSERT INTO tasks (title, description, status, priority, due_date, project_id, assigned_to, created_by) VALUES 
+('Design Database Schema', 'Create the initial database design for the task manager', 'completed', 'high', CURRENT_DATE, 1, 2, 1),
+('Implement Authentication', 'Add JWT authentication to the backend', 'in_progress', 'high', CURRENT_DATE + INTERVAL '3 days', 1, 1, 1),
+('Create Dashboard UI', 'Build the dashboard component with statistics', 'pending', 'medium', CURRENT_DATE + INTERVAL '7 days', 1, 2, 1),
+('Write Documentation', 'Create comprehensive API documentation', 'pending', 'low', CURRENT_DATE + INTERVAL '14 days', 1, 2, 1);
