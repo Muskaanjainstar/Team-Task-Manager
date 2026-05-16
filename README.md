@@ -39,5 +39,5 @@ A comprehensive task management system with role-based access control (Admin/Mem
 
 1. **Clone the repository**
 ```bash
-git clone <your-repo-url>
+git clone <https://github.com/Muskaanjainstar/Team-Task-Manager>
 cd task-manager
