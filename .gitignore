@@ -1,0 +1,6 @@
+venv/
+__pycache__/
+*.pyc
+sql_app.db
+task_manager.db
+.env
